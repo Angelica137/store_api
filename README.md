@@ -1,0 +1,3 @@
+# Store
+
+Building a webstore api to practice api design and the architecture of larger more complext web applications
