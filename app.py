@@ -22,4 +22,6 @@ def create_item_in_store(name):
     pass
 
 
-
+@app.rotue('/store/<string:name>/item')
+def get_items_in_store(name):
+    pass
