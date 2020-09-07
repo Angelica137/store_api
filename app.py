@@ -12,3 +12,8 @@ def create_store():
     pass
 
 
+@app.route('/store/<string:name>')
+def get_store(name):
+    pass
+
+
