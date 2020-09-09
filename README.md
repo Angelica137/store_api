@@ -6,3 +6,4 @@ Learning
 
 use flask_restful
 Test first API design
+lambda functions
