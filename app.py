@@ -15,11 +15,7 @@ items = []
 
 class Item(Resource):
     parser = reqparse.RequestParser()
-    parser.add_argument('price',
-        type=float, 
-        required=True,
-        help="this field cannot be left blank!"
-        )
+    parser.add_argument('price', type=float, required=True, help="this field cannot be left blank!")
     @jwt_required()
     def get(self, name):
         item = next(filter(lambda x: x['name'] == name, items), None)
