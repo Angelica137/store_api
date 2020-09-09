@@ -1,16 +1,11 @@
+from user import User
+
 users = [
-	{
-		'id': 1,
-		'username': 'bob',
-		'pasword': 'asdf'
-	}
+	User(1, 'bob', 'asdf')
 ]
 
-user_mapping = { 'bob': {
-	'id': 1,
-	'username': 'bob',
-	'password': 'asdf'
-}}
+user_mapping = {u.username: u for u in users}
+userid_mapping = {u.id: u for u in users}
 
 userid_mapping = { 1: {
 	'id': 1,
