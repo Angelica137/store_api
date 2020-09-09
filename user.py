@@ -7,6 +7,21 @@ class User:
         self.username = username
         self.password = password
 
+    def find_by_username(self, username):
+        connection = sqlite3.connect('data.db')
+        sursor = connection.cursor()
+
+        query = "SELECT * FROM users WHERE username=?"
+        result = curson.execute(query, (username,))
+				row = result.fetchone()
+				if row:
+            user = User(rpw[0], row[1], row[2])
+        else:
+            user = None
+
+        connection.close()
+        return user
+
 
 class UserRegister(Resource):
 
