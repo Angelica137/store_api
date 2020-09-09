@@ -4,7 +4,7 @@ users = [
 	User(1, 'bob', 'asdf')
 ]
 
-user_mapping = {u.username: u for u in users}
+username_mapping = {u.username: u for u in users}
 userid_mapping = {u.id: u for u in users}
 
 userid_mapping = { 1: {
@@ -21,4 +21,4 @@ def authenticate(username, password):
 
 def identity(payload):
     user_id = payload ['identity']
-    return useris_mapping.get(user_id, None)
+    return userid_mapping.get(user_id, None)
