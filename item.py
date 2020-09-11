@@ -39,7 +39,7 @@ class Item(Resource):
         try:
             self.insert(item)
         except:
-            return {"message": "An error occured insterting the item."}
+            return {"message": "An error occured insterting the item."}, 500
 
         return item, 201
 
