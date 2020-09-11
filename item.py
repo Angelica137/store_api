@@ -23,7 +23,7 @@ class Item(Resource):
         query = "SELECT * FROM items WHERE name=?"
         result = cursor.execute(query, (name, ))
         row = result.fetchone()
-        conneciton.close()
+        connection.close()
 
         if row:
             return {'item': {'name': row[0], 'price': row[1]}}
@@ -36,7 +36,7 @@ class Item(Resource):
         
         item = {'name': name, 'price': data['price']}
         
-        connection - sqlite3.connect('data.db')
+        connection = sqlite3.connect('data.db')
         cursor = connection.cursor()
         
         query = "INSERT INTO items VALUES (?, ?)"
