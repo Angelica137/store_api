@@ -44,7 +44,7 @@ class Item(Resource):
         return item, 201
 
     @classmethod
-		def insert(cls, item):
+    def insert(cls, item):
         connection = sqlite3.connect('data.db')
         cursor = connection.cursor()
         
@@ -75,8 +75,8 @@ class Item(Resource):
         if item is None:
             try:
                 seilf.insert(update_item)
-        except:
-            return {"message": "An error occured inserting the item."}, 500
+            except:
+                return {"message": "An error occured inserting the item."}, 500
 
         else:
             try:
@@ -86,7 +86,7 @@ class Item(Resource):
         return updated_item
 
     @classmethod
-		def update(cls. item):
+    def update(cls, item):
         connection = sqlite3.connect('data.db')
 
         connection = sqlite3.connect('data.db')
