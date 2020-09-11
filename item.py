@@ -57,6 +57,8 @@ class Item(Resource):
         connection.commit()
         connection.close()
 
+        return {'message': "item deleted"}
+
     def put(self, name):
         data = Item.parser.parse_args()
         item = next(filter(lambda x: x['name'] == name, items), None)
