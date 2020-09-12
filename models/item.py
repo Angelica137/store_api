@@ -25,14 +25,8 @@ class ItemModel(db.Model):
             return cls(*row)
 
     def insert(self):
-        connection = sqlite3.connect('data.db')
-        cursor = connection.cursor()
-        
-        query = "INSERT INTO items VALUES (?, ?)"
-        cursor.execute(query, (self.name, self.price))
-
-        connection.commit()
-        connection.close()
+        db.dession.add(self)
+        db.session.commit()
 
     def update(self):
         connection = sqlite3.connect('data.db')
