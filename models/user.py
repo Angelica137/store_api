@@ -3,6 +3,7 @@ from db import db
 
 
 class UserModel(db.Model):
+    __tablename__ = 'users'
     def __init__(self, _id, username, password):
         self.id = _id
         self.username = username
