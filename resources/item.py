@@ -4,7 +4,6 @@ from flask_jwt import jwt_required
 from models.item import ItemModel
 
 
-
 class Item(Resource):
     parser = reqparse.RequestParser()
     parser.add_argument('price', type=float, required=True, help="this field cannot be left blank!")
