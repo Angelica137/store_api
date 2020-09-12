@@ -25,7 +25,7 @@ class ItemModel(db.Model):
             return cls(*row)
 
     def insert(self):
-        db.dession.add(self)
+        db.session.add(self)
         db.session.commit()
 
     def update(self):
