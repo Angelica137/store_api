@@ -31,14 +31,9 @@ class Item(Resource):
         return item.json(), 201
 
     def delete(self, name):
-        connection = sqlite3.connect('data.db')
-        cursor = connection.cursor()
-        
-        query = "DELETE FROM items WHERE name=?"
-        cursor.execute(query, (name, ))
-
-        connection.commit()
-        connection.close()
+        item = Item.find_by_name(name)
+        if item:
+            item.delete_from_db()
 
         return {'message': "item deleted"}
 
