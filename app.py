@@ -9,7 +9,7 @@ from resources.item import Item, ItemList
 from db import db
 
 app = Flask(__name__)
-app.secret_key = 'super secret'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 api = Api(app)
 
 jwt = JWT(app, authenticate, identity)
