@@ -19,7 +19,7 @@ class Store(Resource):
         except:
             return {'message': 'An error occurred while creating the store.'}, 500
 
-        return stpre.json(), 201
+        return store.json(), 201
 
     def delete(self, name):
         store = StoreModel.find_by_name(name)
