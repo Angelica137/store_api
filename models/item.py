@@ -24,7 +24,7 @@ class ItemModel(db.Model):
         if row:
             return cls(*row)
 
-    def insert(self):
+    def save_to_db(self):
         db.session.add(self)
         db.session.commit()
 
