@@ -49,7 +49,7 @@ This project was also interesting for me because it transitioned from using SQL 
 
 `<ptyhon app.py>`
 
-# How to use
+## How to use
 
 This API is live on [Angelica's Web Sotore][1] 🎢
 
@@ -63,7 +63,8 @@ Credits
 
 To build this API, I used this tutorial by Jose Salvatierra.
 [REST APIs with Flask and Python][3]
-[3]:https://www.udemy.com/course/rest-api-flask-and-python/ "REST APIs with Flask and Python"
+
+[3]: https://www.udemy.com/course/rest-api-flask-and-python/ "REST APIs with Flask and Python"
 
 This tutorial is excellent and demystified a lot of questions I had about Python, even if I had been coding in Python for a while, he took the time to explain concepts such as argument unpacking and Python decorators. I highly recommend his course.
 
