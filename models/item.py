@@ -26,6 +26,10 @@ class ItemModel(db.Model):
         if row:
             return cls(*row)
 
+    @classmethod
+    def find_all():
+       return cls.query.all()
+
     def save_to_db(self):
         db.session.add(self)
         db.session.commit()
