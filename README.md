@@ -61,15 +61,16 @@ However, being an API, you will get a 404 message. You can still try it out on [
 
 Credits
 
-To build this API, I used this tutorial by Jose Salvatierra.
-[REST APIs with Flask and Python][3]
+To build this API, I used this tutorial by Jose Salvatierra - [REST APIs with Flask and Python][3]
 
 [3]: https://www.udemy.com/course/rest-api-flask-and-python/ "REST APIs with Flask and Python"
 
 This tutorial is excellent and demystified a lot of questions I had about Python, even if I had been coding in Python for a while, he took the time to explain concepts such as argument unpacking and Python decorators. I highly recommend his course.
 
-This tutorial by Miguel Grinberg was also handy when thinking about design first, and it also covers decorators. This course is also great.
-https://learning.oreilly.com/videos/building-web-apis/
+This tutorial by Miguel Grinberg was also handy when thinking about design first - [Building Web APIs][4]
+It also covers decorators and lessons around designing APIs and scaling them.
+
+[4]: https://learning.oreilly.com/videos/building-web-apis/
 
 This blogpost was very useful when setting up Postman environments. It saves a lot of typing and copy-pasting
 https://dev.to/loopdelicious/using-jwt-to-authenticate-and-authorize-requests-in-postman-3a5h
