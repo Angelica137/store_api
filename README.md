@@ -72,5 +72,5 @@ It also covers decorators and lessons around designing APIs and scaling them.
 
 [4]: https://learning.oreilly.com/videos/building-web-apis/
 
-This blogpost was very useful when setting up Postman environments. It saves a lot of typing and copy-pasting
+This blogpost was very useful when setting up Postman environments. It saves a lot of typing and copy-pasting.
 https://dev.to/loopdelicious/using-jwt-to-authenticate-and-authorize-requests-in-postman-3a5h
